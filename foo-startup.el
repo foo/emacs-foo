@@ -1,6 +1,8 @@
-(add-to-list 'load-path "~/code/emacs-foo/startup")
+(add-to-list 'load-path
+	     (concat foo-config-dir "startup"))
 
 (require 'foo-packages)
 (require 'foo-appearance)
 
 (provide 'foo-startup)
+

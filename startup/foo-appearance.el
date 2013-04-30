@@ -10,4 +10,7 @@
 (blink-cursor-mode -1)
 (setq evil-default-cursor t)
 
+;; font
+(set-default-font "Ubuntu Mono-12:bold")
+
 (provide 'foo-appearance)

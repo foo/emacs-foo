@@ -11,3 +11,6 @@
   '(evil-insert-state
     evil-normal-mode
     evil-movement-mode))
+
+(require 'evil)
+(evil-mode 1)

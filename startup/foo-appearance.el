@@ -13,4 +13,22 @@
 ;; font
 (set-default-font "Ubuntu Mono-12:bold")
 
+;; color theme
+(load-theme '
+;adwaita
+;deeper-blue
+;dichromacy
+;leuven
+;light-blue
+;manoj-dark
+;misterioso
+tango
+;tango-dark
+;tsdh-dark
+;tsdh-light
+;wheatgrass
+;whiteboard
+;wombat
+t)
+
 (provide 'foo-appearance)

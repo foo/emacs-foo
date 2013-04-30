@@ -7,7 +7,7 @@
 
 (require 'foo-normal-state)
 (require 'foo-insert-state)
-(require 'foo-movement-state)
+(require 'foo-motion-state)
 (require 'foo-all-states)
 
 (provide 'foo-evil-states)

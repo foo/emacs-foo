@@ -3,6 +3,6 @@
 
 (require 'foo-packages)
 (require 'foo-appearance)
+(require 'foo-unlock-keys)
 
 (provide 'foo-startup)
-

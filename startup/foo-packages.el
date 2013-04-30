@@ -1,3 +1,7 @@
+(defvar foo-packages '(evil
+		       ace-jump-mode))
+
+;; below: choosing repository, refreshing contents, installing packages
 (require 'package)
 (add-to-list 'package-archives
              '("marmalade" . "http://marmalade-repo.org/packages/") t)
@@ -6,9 +10,6 @@
 
 (when (not package-archive-contents)
   (package-refresh-contents))
-
-(defvar foo-packages '(evil
-		       ace-jump-mode))
 
 (dolist (p foo-packages)
   (when (not (package-installed-p p))

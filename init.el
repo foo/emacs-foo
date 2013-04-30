@@ -1,3 +1,5 @@
+(require 'cl)
+
 ; temporary placement, as this version
 ; of config lacks needed features
 (defvar foo-config-dir "~/code/emacs-foo/")

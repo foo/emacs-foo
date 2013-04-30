@@ -20,9 +20,14 @@ keys do we have to bind?
      'evil-normal-mode
      'evil-movement-mode))
 
-2. 
+2. Switching between modes. Two possible designs:
 
-How the Emacs should start? Let's define init.el. init.el should just
-include stuff and be commented with statements from this plan.
+   a) For every pair twice
+   b) every mode can return to emacs state and normal-mode; switching
+      to other modes only in normal-mode.
 
-Now, let's create directory for every mode.
+* startup stuff in its own file from the begining
+* directories for each state
+* special states for shell, magit that might derive from other modes
+** two shell states that derives from: insert and movement states
+** magit derives from movement

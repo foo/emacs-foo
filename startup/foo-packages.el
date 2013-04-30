@@ -11,8 +11,9 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 
-(dolist (p foo-packages)
-  (when (not (package-installed-p p))
-    (package-install p)))
+(mapcar (lambda (p)
+	  (when (not (package-installed-p p))
+	    (package-install p)))
+	foo-packages)
 
 (provide 'foo-packages)

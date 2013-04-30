@@ -17,4 +17,12 @@
 
 (define-key evil-motion-state-map "s" 'isearch-forward)
 
+(define-key evil-motion-state-map "m" 'ace-jump-mode)
+
+(define-key evil-motion-state-map "a" 'beginning-of-line)
+(define-key evil-motion-state-map "e" 'end-of-line)
+
+; other
+(define-key evil-motion-state-map "f" 'find-file)
+
 (provide 'foo-motion-state)

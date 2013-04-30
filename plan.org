@@ -31,3 +31,8 @@ keys do we have to bind?
 * special states for shell, magit that might derive from other modes
 ** two shell states that derives from: insert and movement states
 ** magit derives from movement
+* use a lot of variables
+** do not define font name in code, use variable for that
+*** advantage is that you can set the variables conditionaly
+This feature should be very useful on Windows, where I am too lazy to
+install all the fonts I need.

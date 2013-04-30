@@ -1,1 +1,28 @@
-* 
+* evil mode as a backbone
+
+Let's define some states:
+- insert
+- movement
+- edit
+That's all as far as I know it. Later vi-like modes like visual are
+to be considered.
+
+For all states that allows to type (emacs, insert), the mode
+switching should be C-{key from right side of the keyboard}. What
+keys do we have to bind?
+
+1. Switching to emacs state should be available in every state. So,
+   write the macro that traverses all states and sets C-z keybinding to
+   this mode. First, set foo-all-states variable:
+
+   (set foo-all-states
+    ('evil-insert-state
+     'evil-normal-mode
+     'evil-movement-mode))
+
+2. 
+
+How the Emacs should start? Let's define init.el. init.el should just
+include stuff and be commented with statements from this plan.
+
+Now, let's create directory for every mode.

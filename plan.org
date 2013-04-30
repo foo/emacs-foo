@@ -36,3 +36,5 @@ keys do we have to bind?
 *** advantage is that you can set the variables conditionaly
 This feature should be very useful on Windows, where I am too lazy to
 install all the fonts I need.
+* current issues:
+** dired mode is shadowing my keybindings

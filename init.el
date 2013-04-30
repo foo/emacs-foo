@@ -6,12 +6,5 @@
 
 ; foo- prefix convention
 (require 'foo-startup)
-
-(defvar foo-all-states
-  '(evil-insert-state
-    evil-normal-mode
-    evil-movement-mode))
-
-(require 'evil)
-(evil-mode 1)
+(require 'foo-evil-states)
 

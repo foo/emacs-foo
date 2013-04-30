@@ -1,0 +1,1 @@
+(provide 'foo-insert-state)

@@ -15,12 +15,16 @@
 (define-key evil-motion-state-map "l" 'evil-scroll-up)
 (define-key evil-motion-state-map "b" 'evil-scroll-down)
 
+(define-key evil-motion-state-map "a" 'beginning-of-line)
+(define-key evil-motion-state-map "e" 'end-of-line)
+
+; searching
+
+; o on dvorak is where s is on qwerty
+(define-key evil-motion-state-map "o" 'isearch-forward)
 (define-key evil-motion-state-map "s" 'isearch-forward)
 
 (define-key evil-motion-state-map "m" 'ace-jump-mode)
-
-(define-key evil-motion-state-map "a" 'beginning-of-line)
-(define-key evil-motion-state-map "e" 'end-of-line)
 
 ; other
 (define-key evil-motion-state-map "f" 'find-file)

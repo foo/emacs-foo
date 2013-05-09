@@ -4,6 +4,7 @@
 (require 'foo-packages)
 (require 'foo-appearance)
 (require 'foo-unlock-keys)
+(require 'foo-modes)
 
 (find-file "/home/maciek/shortcuts")
 

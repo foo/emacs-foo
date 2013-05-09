@@ -1,7 +1,13 @@
 (add-hook 'dired-mode-hook 'foo-dired-keybindings)
 
 (defun foo-dired-keybindings ()
-  (local-set-key (kbd "t") 'dired-previous-line)
-  (local-set-key (kbd "h") 'dired-next-line))
+  (require 'dired)
+  (require 'evil)
+  (evil-define-key 'normal dired-mode-map "r" 'isearch-backward)
+  (evil-define-key 'normal dired-mode-map "s" 'isearch-forward)
+  (evil-define-key 'normal dired-mode-map "c" 'dired-up-directory)
+  (evil-define-key 'normal dired-mode-map "t" 'dired-previous-line)
+  (evil-define-key 'normal dired-mode-map "h" 'dired-next-line))
+
 
 (provide 'foo-dired)

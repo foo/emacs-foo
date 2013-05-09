@@ -26,7 +26,4 @@
 
 (define-key evil-motion-state-map "m" 'ace-jump-mode)
 
-; other
-(define-key evil-motion-state-map "f" 'find-file)
-
 (provide 'foo-motion-state)

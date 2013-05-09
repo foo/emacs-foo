@@ -5,4 +5,6 @@
 (require 'foo-appearance)
 (require 'foo-unlock-keys)
 
+(find-file "/home/maciek/shortcuts")
+
 (provide 'foo-startup)

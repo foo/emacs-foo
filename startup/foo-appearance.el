@@ -11,7 +11,7 @@
 (setq evil-default-cursor t)
 
 ;; font
-(set-default-font "Ubuntu Mono-12:bold")
+(set-default-font "Ubuntu Mono-13:bold")
 
 ;; color theme
 (load-theme '
@@ -21,8 +21,8 @@
 ;leuven
 ;light-blue
 ;manoj-dark
-;misterioso
-tango
+misterioso
+;tango
 ;tango-dark
 ;tsdh-dark
 ;tsdh-light

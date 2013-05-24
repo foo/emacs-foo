@@ -32,6 +32,15 @@
 (define-key evil-motion-state-map "w" 'evil-window-state)
 (define-key evil-normal-state-map "w" 'evil-window-state)
 
+(defun next-window-with-normal-state ()
+  (interactive)
+  (evil-change-to-previous-state)
+  (other-window 1)
+  (evil-normal-state))
+
+(define-key evil-window-state-map "w" 'next-window-with-normal-state)
+(define-key evil-window-state-map "C-w" 'next-window-with-normal-state)
+
 (define-key evil-window-state-map "h" 'delete-other-windows)
 (define-key evil-window-state-map "t" 'split-window-below)
 (define-key evil-window-state-map "n" 'split-window-right)

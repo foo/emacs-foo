@@ -7,10 +7,6 @@
   (tooltip-mode -1)
   (tool-bar-mode -1)
 
-  ;; cursor
-  (blink-cursor-mode -1)
-  (setq evil-default-cursor t)
-
   ;; font
   (set-default-font "Ubuntu Mono-13:bold")
 
@@ -32,6 +28,11 @@
 					;wombat
    t)
   
+  ;; cursor
+  (blink-cursor-mode -1)
+  (setq evil-default-cursor t)
+  (set-cursor-color "white")
+
   (x-send-client-message
    nil 0 nil "_NET_WM_STATE" 32
    '(2 "_NET_WM_STATE_MAXIMIZED_HORZ" 0))

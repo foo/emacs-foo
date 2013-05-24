@@ -10,5 +10,6 @@
     (untabify (point-min) (point-max))))
 
 (define-key evil-normal-state-map "r" 'reindent-buffer)
+(define-key evil-normal-state-map "v" 'magit-status)
 
 (provide 'foo-normal-state)

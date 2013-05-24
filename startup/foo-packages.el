@@ -1,4 +1,5 @@
 (defvar foo-packages '(evil
+		       magit
 		       ace-jump-mode))
 
 ;; below: choosing repository, refreshing contents, installing packages

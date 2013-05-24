@@ -23,23 +23,11 @@
           (select-window first-win)
           (if this-win-2nd (other-window 1))))))
 
-(evil-define-state window
-  "Window manipulation state"
-  :tag " <W> "
-  :message "-- window manipulation --")
-
-(define-key evil-insert-state-map (kbd "C-w") 'evil-window-state)
-(define-key evil-motion-state-map "w" 'evil-window-state)
-(define-key evil-normal-state-map "w" 'evil-window-state)
-
-(defun next-window-with-normal-state ()
+(defun next-window-with-edit-state ()
   (interactive)
   (evil-change-to-previous-state)
   (other-window 1)
-  (evil-normal-state))
-
-(define-key evil-window-state-map "w" 'next-window-with-normal-state)
-(define-key evil-window-state-map "C-w" 'next-window-with-normal-state)
+  (evil-edit-state))
 
 (defun next-window-with-window-state ()
   (interactive)
@@ -50,6 +38,10 @@
   (interactive)
   (other-window -1)
   (evil-window-state))
+
+(define-key evil-window-state-map "f" 'dired-jump)
+(define-key evil-window-state-map "w" 'next-window-with-edit-state)
+(define-key evil-window-state-map "C-w" 'next-window-with-edit-state)
 
 (define-key evil-window-state-map "r" 'next-window-with-window-state)
 (define-key evil-window-state-map "c" 'prev-window-with-window-state)

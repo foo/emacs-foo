@@ -1,6 +1,3 @@
-(define-key evil-normal-state-map "z" 'evil-emacs-state)
-(define-key evil-normal-state-map "m" 'evil-motion-state)
-
 (defun reindent-buffer ()
   "Function from basic-edit-toolkit."
   (interactive)
@@ -9,7 +6,12 @@
     (delete-trailing-whitespace)
     (untabify (point-min) (point-max))))
 
-(define-key evil-normal-state-map "r" 'reindent-buffer)
-(define-key evil-normal-state-map "v" 'magit-status)
+(define-key evil-edit-state-map "w" 'evil-window-state)
 
-(provide 'foo-normal-state)
+(define-key evil-edit-state-map "z" 'evil-emacs-state)
+(define-key evil-edit-state-map "m" 'evil-movement-state)
+(define-key evil-edit-state-map "f" 'dired-jump)
+(define-key evil-edit-state-map "r" 'reindent-buffer)
+(define-key evil-edit-state-map "v" 'magit-status)
+
+(provide 'foo-edit-state)

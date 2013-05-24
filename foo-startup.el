@@ -8,8 +8,12 @@
 (require 'foo-modes)
 
 (find-file "/home/maciek/shortcuts")
-(split-window-below)
-(switch-to-buffer "*Messages*")
-(other-window 1)
+
+(defvar foo-debug-buffer nil)
+
+(when foo-debug-buffer
+  (split-window-below)
+  (switch-to-buffer "*Messages*")
+  (other-window 1))
 
 (provide 'foo-startup)

@@ -1,6 +1,6 @@
 ; entering other states
-(define-key evil-motion-state-map (kbd "C-n") 'evil-execute-in-normal-state)
-(define-key evil-motion-state-map (kbd "u") 'evil-execute-in-normal-state)
+(define-key evil-motion-state-map (kbd "C-n") 'evil-normal-state)
+(define-key evil-motion-state-map (kbd "u") 'evil-normal-state)
 (define-key evil-motion-state-map (kbd "i") 'evil-insert-state)
 
 ; motion

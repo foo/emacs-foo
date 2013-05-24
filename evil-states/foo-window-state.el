@@ -1,0 +1,3 @@
+
+
+(provide 'foo-window-state)

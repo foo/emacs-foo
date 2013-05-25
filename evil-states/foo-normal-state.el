@@ -7,9 +7,14 @@
     (untabify (point-min) (point-max))))
 
 (define-key evil-normal-state-map "w" 'evil-window-state)
-
 (define-key evil-normal-state-map "z" 'evil-emacs-state)
 (define-key evil-normal-state-map "m" 'evil-motion-state)
+
+(define-key evil-normal-state-map "h" "<left>")
+(define-key evil-normal-state-map "t" "<down>")
+(define-key evil-normal-state-map "n" "<up>")
+(define-key evil-normal-state-map "s" "<right>")
+
 (define-key evil-normal-state-map "f" 'dired-jump)
 (define-key evil-normal-state-map "r" 'reindent-buffer)
 (define-key evil-normal-state-map "\C-v" 'magit-status)

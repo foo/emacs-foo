@@ -9,4 +9,5 @@
 ; foo- prefix convention
 (require 'foo-startup)
 (require 'foo-evil-states)
+(require 'foo-modes)
 (require 'foo-temporary)

@@ -41,7 +41,6 @@
 
 (define-key evil-window-state-map "f" 'dired-jump)
 (define-key evil-window-state-map "w" 'next-window-with-normal-state)
-(define-key evil-window-state-map "C-w" 'next-window-with-normal-state)
 
 (define-key evil-window-state-map "r" 'next-window-with-window-state)
 (define-key evil-window-state-map "c" 'prev-window-with-window-state)

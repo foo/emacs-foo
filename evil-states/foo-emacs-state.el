@@ -8,7 +8,7 @@
 (define-key evil-emacs-state-map (kbd "C-e") 'move-end-of-line)
 (define-key evil-emacs-state-map (kbd "C-a") 'move-beginning-of-line)
 
-(define-key evil-emacs-state-map (kbd "C-,") 'kill-backward-word)
+(define-key evil-emacs-state-map (kbd "C-,") 'backward-kill-word)
 (define-key evil-emacs-state-map (kbd "C-p") 'kill-word)
 (define-key evil-emacs-state-map (kbd "C-.") 'delete-backward-char)
 

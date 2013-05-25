@@ -23,11 +23,11 @@
           (select-window first-win)
           (if this-win-2nd (other-window 1))))))
 
-(defun next-window-with-edit-state ()
+(defun next-window-with-normal-state ()
   (interactive)
   (evil-change-to-previous-state)
   (other-window 1)
-  (evil-edit-state))
+  (evil-normal-state))
 
 (defun next-window-with-window-state ()
   (interactive)
@@ -40,8 +40,8 @@
   (evil-window-state))
 
 (define-key evil-window-state-map "f" 'dired-jump)
-(define-key evil-window-state-map "w" 'next-window-with-edit-state)
-(define-key evil-window-state-map "C-w" 'next-window-with-edit-state)
+(define-key evil-window-state-map "w" 'next-window-with-normal-state)
+(define-key evil-window-state-map "C-w" 'next-window-with-normal-state)
 
 (define-key evil-window-state-map "r" 'next-window-with-window-state)
 (define-key evil-window-state-map "c" 'prev-window-with-window-state)

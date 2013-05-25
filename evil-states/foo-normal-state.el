@@ -10,10 +10,10 @@
 (define-key evil-normal-state-map "z" 'evil-emacs-state)
 (define-key evil-normal-state-map "m" 'evil-motion-state)
 
-(define-key evil-normal-state-map "h" "<left>")
-(define-key evil-normal-state-map "t" "<down>")
-(define-key evil-normal-state-map "n" "<up>")
-(define-key evil-normal-state-map "s" "<right>")
+(define-key evil-normal-state-map "h" 'evil-backward-char)
+(define-key evil-normal-state-map "t" 'next-line)
+(define-key evil-normal-state-map "n" 'previous-line)
+(define-key evil-normal-state-map "s" 'evil-forward-char)
 
 (define-key evil-normal-state-map "f" 'dired-jump)
 (define-key evil-normal-state-map "r" 'reindent-buffer)

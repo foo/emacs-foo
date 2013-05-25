@@ -1,7 +1,7 @@
 (define-key evil-motion-state-map "w" 'evil-window-state)
 
-(define-key evil-motion-state-map (kbd "C-n") 'evil-edit-state)
-(define-key evil-motion-state-map (kbd "u") 'evil-edit-state)
+(define-key evil-motion-state-map (kbd "C-n") 'evil-normal-state)
+(define-key evil-motion-state-map (kbd "u") 'evil-normal-state)
 (define-key evil-motion-state-map (kbd "i") 'evil-insert-state)
 
 (define-key evil-motion-state-map "f" 'dired-jump)

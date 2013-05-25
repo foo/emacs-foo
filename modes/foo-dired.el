@@ -4,11 +4,13 @@
   (require 'dired)
   (require 'evil)
   (require 'foo-evil-states)
+  (require 'foo-normal-state)
   (evil-define-key 'normal dired-mode-map "r" 'isearch-backward)
   (evil-define-key 'normal dired-mode-map "s" 'isearch-forward)
   (evil-define-key 'normal dired-mode-map "c" 'dired-up-directory)
   (evil-define-key 'normal dired-mode-map "t" 'dired-previous-line)
   (evil-define-key 'normal dired-mode-map "w" 'evil-window-state)
+  (evil-define-key 'normal dired-mode-map "<return>" 'dired-view-file)
   (evil-define-key 'normal dired-mode-map "h" 'dired-next-line))
 
 

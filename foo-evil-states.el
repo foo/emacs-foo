@@ -15,7 +15,6 @@
 (require 'foo-normal-state)
 (require 'foo-emacs-state)
 (require 'foo-insert-state)
-(require 'foo-motion-state)
 (require 'foo-visual-state)
 
 (provide 'foo-evil-states)

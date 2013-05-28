@@ -15,5 +15,6 @@
 (define-key evil-normal-state-map "s" 'evil-forward-char)
 
 (define-key evil-normal-state-map "f" 'dired-jump)
+(define-key evil-normal-state-map "j" 'ace-jump-mode)
 
 (provide 'foo-normal-state)

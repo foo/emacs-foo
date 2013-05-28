@@ -6,7 +6,6 @@
     (delete-trailing-whitespace)
     (untabify (point-min) (point-max))))
 
-(define-key evil-normal-state-map "\C-w" 'evil-window-state)
 (define-key evil-normal-state-map "\C-z" 'evil-emacs-state)
 (define-key evil-normal-state-map "\C-v" 'magit-status)
 

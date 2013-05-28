@@ -16,8 +16,6 @@
   (interactive)
   (duplicate-line-above t))
 
-(define-key evil-emacs-state-map (kbd "C-w") 'evil-window-state)
-
 (define-key evil-emacs-state-map (kbd "C-f") 'dired-jump)
 
 (define-key evil-emacs-state-map [(control k)] 'kill-line)

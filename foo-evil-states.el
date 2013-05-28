@@ -2,16 +2,11 @@
 	     (concat foo-config-dir "evil-states"))
 
 (setq evil-default-state 'normal)
+(setq evil-want-C-w-in-emacs-state 1)
 
 (require 'evil)
 (evil-mode 1)
 
-(evil-define-state window
-  "Window manipulation state"
-  :tag " <W> "
-  :message "-- window manipulation --")
-
-(require 'foo-window-state)
 (require 'foo-normal-state)
 (require 'foo-emacs-state)
 (require 'foo-insert-state)

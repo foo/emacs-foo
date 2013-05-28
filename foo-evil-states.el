@@ -1,7 +1,7 @@
 (add-to-list 'load-path
 	     (concat foo-config-dir "evil-states"))
 
-(setq evil-default-state 'emacs)
+(setq evil-default-state 'normal)
 
 (require 'evil)
 (evil-mode 1)

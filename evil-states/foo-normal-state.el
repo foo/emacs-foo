@@ -11,8 +11,8 @@
 (define-key evil-normal-state-map "m" 'evil-motion-state)
 
 (define-key evil-normal-state-map "h" 'evil-backward-char)
-(define-key evil-normal-state-map "t" 'next-line)
-(define-key evil-normal-state-map "n" 'previous-line)
+(define-key evil-normal-state-map "t" 'evil-next-line)
+(define-key evil-normal-state-map "n" 'evil-previous-line)
 (define-key evil-normal-state-map "s" 'evil-forward-char)
 
 (define-key evil-normal-state-map "f" 'dired-jump)

@@ -12,4 +12,9 @@
 (require 'foo-insert-state)
 (require 'foo-visual-state)
 
+(define-key evil-window-map "h" 'delete-other-windows)
+(define-key evil-window-map "s" 'delete-window)
+(define-key evil-window-map "t" 'split-window-below)
+(define-key evil-window-map "n" 'split-window-right)
+
 (provide 'foo-evil-states)

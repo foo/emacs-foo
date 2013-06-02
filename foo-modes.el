@@ -4,5 +4,6 @@
 (require 'foo-dired)
 (require 'foo-cpp)
 (require 'foo-magit)
+(require 'foo-ruby)
 
 (provide 'foo-modes)

@@ -17,4 +17,7 @@
 (define-key evil-normal-state-map "f" 'dired-jump)
 (define-key evil-normal-state-map "j" 'ace-jump-mode)
 
+(define-key evil-normal-state-map "\C-n" 'evil-scroll-page-up)
+(define-key evil-normal-state-map "\C-t" 'evil-scroll-page-down)
+
 (provide 'foo-normal-state)

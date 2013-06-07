@@ -1,5 +1,7 @@
 (defvar foo-packages '(evil
 		       magit
+		       smex
+		       auctex
 		       ace-jump-mode))
 
 ;; below: choosing repository, refreshing contents, installing packages

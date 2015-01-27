@@ -1,5 +1,13 @@
 (provide 'foo-latex)
 
 (setq TeX-PDF-mode t)
-(add-hook 'LaTeX-mode-hook '(lambda ()
-                             (auto-fill-mode 1)))
+
+(defun foo-latex-hook ()
+  )
+
+(add-hook 'LaTeX-mode-hook 'foo-latex-hook)
+; TODO:
+; - snippets (begin, end)
+; - bind the preview to single key in latex modemap
+; - smart indentation
+; - reftex

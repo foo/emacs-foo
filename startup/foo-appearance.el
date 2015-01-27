@@ -8,7 +8,7 @@
   (tool-bar-mode -1)
 
   ;; font
-  (set-default-font "Ubuntu Mono-13:bold")
+  (set-default-font "Ubuntu Mono-13")
 
   ;; color theme
   (load-theme '
@@ -18,8 +18,8 @@
 					;leuven
 					;light-blue
 					;manoj-dark
-   misterioso
-					;tango
+					;misterioso
+					tango
 					;tango-dark
 					;tsdh-dark
 					;tsdh-light
@@ -31,7 +31,7 @@
   ;; cursor
   (blink-cursor-mode -1)
   (setq evil-default-cursor t)
-  (set-cursor-color "white")
+  (set-cursor-color "black")
 
   (x-send-client-message
    nil 0 nil "_NET_WM_STATE" 32

@@ -1,6 +1,14 @@
 (provide 'foo-latex)
 
 (setq TeX-PDF-mode t)
+(require 'tex-site)
+(autoload 'reftex-mode "reftex" "RefTeX Minor Mode" t)
+(autoload 'turn-on-reftex "reftex" "RefTeX Minor Mode" nil)
+(autoload 'reftex-citation "reftex-cite" "Make citation" nil)
+(autoload 'reftex-index-phrase-mode "reftex-index" "Phrase Mode" t)
+(add-hook 'latex-mode-hook 'turn-on-reftex) ; with Emacs latex mode
+;; (add-hook 'reftex-load-hook 'imenu-add-menubar-index)
+(add-hook 'LaTeX-mode-hook 'turn-on-reftex)
 
 (defun foo-latex-hook ()
   )

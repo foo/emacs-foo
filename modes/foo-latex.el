@@ -15,7 +15,13 @@
 (defun foo-latex-hook ()
   )
 
+
 (add-hook 'LaTeX-mode-hook 'foo-latex-hook)
+(add-hook 'reftex-toc-mode-hook  
+	   '(lambda ()
+	       (define-key reftex-toc-mode-map
+		"t" 'reftex-toc-previous)
+	     ))
 ; TODO:
 ; - snippets (begin, end)
 ; - bind the preview to single key in latex modemap

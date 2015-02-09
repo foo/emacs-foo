@@ -2,6 +2,8 @@
 
 (setq LaTeX-item-indent 0)
 (setq TeX-PDF-mode t)
+(setq TeX-newline-function 'reindent-then-newline-and-indent)
+
 (autoload 'reftex-mode "reftex" "RefTeX Minor Mode" t)
 (autoload 'turn-on-reftex "reftex" "RefTeX Minor Mode" nil)
 (autoload 'reftex-citation "reftex-cite" "Make citation" nil)

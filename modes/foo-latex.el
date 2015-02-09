@@ -19,8 +19,8 @@
 (add-hook 'LaTeX-mode-hook 'foo-latex-hook)
 (add-hook 'reftex-toc-mode-hook  
 	   '(lambda ()
-	       (define-key reftex-toc-mode-map
-		"t" 'reftex-toc-previous)
+	       (define-key reftex-toc-mode-map "n" 'reftex-toc-previous)
+	       (define-key reftex-toc-mode-map "t" 'reftex-toc-next)
 	     ))
 ; TODO:
 ; - snippets (begin, end)

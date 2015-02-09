@@ -1,7 +1,7 @@
-(provide 'foo-latex)
-
-(setq TeX-PDF-mode t)
 (require 'tex-site)
+
+(setq LaTeX-item-indent 0)
+(setq TeX-PDF-mode t)
 (autoload 'reftex-mode "reftex" "RefTeX Minor Mode" t)
 (autoload 'turn-on-reftex "reftex" "RefTeX Minor Mode" nil)
 (autoload 'reftex-citation "reftex-cite" "Make citation" nil)
@@ -19,3 +19,5 @@
 ; - bind the preview to single key in latex modemap
 ; - smart indentation
 ; - reftex
+
+(provide 'foo-latex)

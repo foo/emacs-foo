@@ -1,8 +1,8 @@
 (defvar foo-packages '(evil
-		       magit
 		       smex
 		       auctex
-		       ace-jump-mode))
+		       ;;ace-jump-mode
+		       ))
 
 ;; below: choosing repository, refreshing contents, installing packages
 (require 'package)

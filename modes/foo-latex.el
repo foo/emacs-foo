@@ -13,7 +13,13 @@
 (add-hook 'LaTeX-mode-hook 'turn-on-reftex)
 
 (defun foo-latex-hook ()
-  )
+  (push 
+    '("Latexmk" "latexmk -pdf %s" TeX-run-TeX nil t
+      :help "Run Latexmk on file")
+    TeX-command-list)
+  (set-fill-column 100)
+  (longlines-mode)
+ )
 
 
 (add-hook 'LaTeX-mode-hook 'foo-latex-hook)

@@ -15,7 +15,6 @@
 					;adwaita
 					;deeper-blue
 					;dichromacy
-					;leuven
 					;light-blue
 					;manoj-dark
 					;misterioso

@@ -8,7 +8,7 @@
   (tool-bar-mode -1)
 
   ;; font
-  (set-default-font "Ubuntu Mono-13")
+  (set-default-font "Monospace-12")
 
   ;; color theme
   (load-theme '

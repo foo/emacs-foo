@@ -1,6 +1,8 @@
 (defvar foo-packages '(evil
 		       smex
 		       auctex
+		       elpy
+		       flycheck
 		       ;;ace-jump-mode
 		       ))
 

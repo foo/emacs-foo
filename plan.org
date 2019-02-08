@@ -1,1 +1,4 @@
 * C-ret newline in normal mode (editing option)
+* long lines support
+** sane navigation
+** marking lines that are wrapped on the left margin

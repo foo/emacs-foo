@@ -8,7 +8,7 @@
   (tool-bar-mode -1)
 
   ;; font
-  (set-default-font "Monospace-12")
+  (set-default-font "Overpass Mono-12")
 
   ;; color theme
   (load-theme '

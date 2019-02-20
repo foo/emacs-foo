@@ -3,6 +3,7 @@
 		       auctex
 		       elpy
 		       flycheck
+		       avy
 		       ;;ace-jump-mode
 		       ))
 

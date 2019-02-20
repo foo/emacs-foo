@@ -2,3 +2,4 @@
 * long lines support
 ** sane navigation
 ** marking lines that are wrapped on the left margin
+* mark navigation

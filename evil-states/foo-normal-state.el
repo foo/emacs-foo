@@ -17,7 +17,6 @@
 (define-key evil-normal-state-map "f" 'dired-jump)
 (define-key evil-normal-state-map "k" 'avy-goto-word-1)
 (define-key evil-normal-state-map "j" 'avy-goto-char)
-(define-key evil-normal-state-map "s" 'isearch-forward)
 
 (define-key evil-normal-state-map "\C-n" 'evil-scroll-page-up)
 (define-key evil-normal-state-map "\C-t" 'evil-scroll-page-down)

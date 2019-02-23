@@ -18,4 +18,14 @@
 (define-key evil-normal-state-map "k" 'avy-goto-word-1)
 (define-key evil-normal-state-map "j" 'avy-goto-char)
 
+(define-key evil-normal-state-map "\C-h" 'ignore)
+(define-key evil-normal-state-map "\C-t" 'ignore)
+(define-key evil-normal-state-map "\C-n" 'ignore)
+(define-key evil-normal-state-map "\C-s" 'ignore)
+
+(define-key evil-normal-state-map "H" 'ignore)
+(define-key evil-normal-state-map "T" 'ignore)
+(define-key evil-normal-state-map "N" 'ignore)
+(define-key evil-normal-state-map "S" 'ignore)
+
 (provide 'foo-normal-state)
